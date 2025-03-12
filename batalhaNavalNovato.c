@@ -11,22 +11,25 @@ int main() {
 
     for (int j = 0; j < 10; j++)
     {
-        printf("%c\n", linha[j]);
+        printf("%c", linha[j]);
     }
+    printf("\n");
     
     // Criando tabuleiro 10x10
     
     int matriz [Linhas] [Colunas];
     
+    
     for (int i = 0; i < Linhas; i++){
     for (int j = 0; j < Colunas; j++)
       {
+        
         matriz [i][j] = i + j;
         printf("%d", matriz [i] [j]);
-      
-    printf("\n");
-}
+   }
+   
+   printf("\n");
 
-
+    }
     return 0;
 }
