@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 // Desafio Batalha Naval - MateCheck
-
+#define Linhas 10
+#define Colunas 10
 
 int main() {
     printf("Tabuleiro da Batalha Naval\n");
@@ -14,18 +15,18 @@ int main() {
     }
     
     // Criando tabuleiro 10x10
-
     
-
-    int i, j, tabuleiro [10] [10] = {{0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}};
-   
-    for (int i = 0; i < 10; i++){
-    for (int j = 0; j < 10; j++)
+    int matriz [Linhas] [Colunas];
+    
+    for (int i = 0; i < Linhas; i++){
+    for (int j = 0; j < Colunas; j++)
       {
-        printf(tabuleiro [i] [j], " ");
-    }
+        matriz [i][j] = i + j;
+        printf("%d", matriz [i] [j]);
+      
     printf("\n");
 }
+
 
     return 0;
 }
