@@ -36,12 +36,18 @@ int main() {
 
     //criando vetor
 
-    int numeros[3] = {3, 3, 3}; 
+    int Linha = 2;   // Linha de início do navio
+int Coluna = 3;  // Coluna de início do navio
+int tamanho = 3; // Tamanho do navio
+int i; //para o loop
 
 
-    for(int i = 0; i < 3; i++) {
-        printf("%d\n", numeros[i]);
-    }
+// Preencher o navio horizontalmente
+for (i = 0; i < tamanho; i++) {
+    matriz[Linha][Coluna + i] = 3;
+}
+
+
 
 
 

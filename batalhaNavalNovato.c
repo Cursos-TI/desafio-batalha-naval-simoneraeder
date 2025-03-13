@@ -13,11 +13,11 @@ int main() {
 
     for (int j = 0; j < 10; j++)
     {
-        printf("%c\t\t", linha[j]);
+        printf("%c\t", linha[j]);
        
     }
     printf("\n");
-// criando 
+
 
     // Criando tabuleiro 10x10
    
@@ -37,5 +37,33 @@ int main() {
 
     }
 
-    
+// posicionando um navio de tamanho 3 horizontalmente
+
+int Linha = 2;   // Linha de início do navio
+int Coluna = 3;  // Coluna de início do navio
+int tamanho = 3; // Tamanho do navio
+int i; //para o loop
+
+
+// Preencher o navio horizontalmente
+for (i = 0; i < tamanho; i++) {
+    matriz[Linha][Coluna + i] = 3;
 }
+
+// posicionando um navio de tamanho 3 verticalmente
+
+int linha = 2;   // Linha de início do navio
+int coluna = 3;  // Coluna de início do navio
+int tamanho = 3; // Tamanho do navio
+int i;
+// Preencher o navio verticalmente
+for (i = 0; i < tamanho; i++) {
+    matriz [linha + i][coluna] = 3;
+   
+}
+
+
+
+    return 0;
+}
+
