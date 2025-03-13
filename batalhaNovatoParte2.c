@@ -45,7 +45,7 @@ for (int j = 0; j < 10; j++)
 
     if (matriz[i][j] > 4) 
     {
-        matriz[i][j] = matriz [i][j] = 3;
+        matriz[i][j] = 3;
     }
     
   printf("%d\t", matriz[i] [j] );
