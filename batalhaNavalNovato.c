@@ -7,29 +7,35 @@
 int main() {
     printf("Tabuleiro da Batalha Naval\n");
 
+    // Criando linha
+
     char linha [10] = {'A','B','C','D','E','F','G','H','I','J'};
 
     for (int j = 0; j < 10; j++)
     {
-        printf("%c", linha[j]);
+        printf("%c\t\t", linha[j]);
+       
     }
     printf("\n");
-    
+// criando 
+
     // Criando tabuleiro 10x10
-    
-    int matriz [Linhas] [Colunas];
-    
-    
-    for (int i = 0; i < Linhas; i++){
+   
+    int matriz [Linhas] [Colunas] ;
+        
+    for (int i = 0; i < Linhas; i++)
+    {  printf("%2d ", i+1); 
     for (int j = 0; j < Colunas; j++)
       {
+        matriz [i] [j] = 0;    
         
-        matriz [i][j] = i + j;
-        printf("%d", matriz [i] [j]);
+        printf("%d\t", matriz[i] [j] );
+        
    }
-   
+  
    printf("\n");
 
     }
-    return 0;
+
+    
 }
